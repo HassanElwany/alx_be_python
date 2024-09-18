@@ -22,21 +22,21 @@ time_bound = input("Is it time-bound? (yes/no): ")
 match priority:
     case 'high':
         if time_bound == 'yes':
-            print(f"{task} is a high priority task that requires immediate attention today!")
+            print(f"Reminder: '{task}' is a high-priority task that requires immediate attention today!")
         else:
-            print(f"{task} is a high priority task that requires your attention")
+            print(f"Reminder: '{task}' is a high-priority task that requires your attention.")
     case 'medium':
         if time_bound == 'yes':
-            print(f"{task} is a {priority} priority task that requires to be considered!")
+            print(f"Reminder: '{task}' is a medium-priority task that needs to be completed soon.")
         else:
-            print(f"{task} is a {priority} priority task that need to be on yout to do")
+            print(f"Reminder: '{task}' is a medium-priority task. Put it on your to-do list.")
     case 'low':
         if time_bound == 'yes':
-            print(f"{task} is a {priority} priority task feel free to make some time to it")
+            print(f"Reminder: '{task}' is a low-priority task, but you should make some time for it.")
         else:
-            print(f"{task} is a {priority} priority task. Consider completing it when you have free time")
+            print(f"Reminder: '{task}' is a low-priority task. Consider completing it when you have free time.")
     case _:
-        print("Invalid Choice")
+        print("Invalid choice. Please select a valid priority (high/medium/low).")
 
 # Within the Match Case or after, use an if statement to modify the reminder if the task is time-bound.
 # Provide a Customized Reminder:
