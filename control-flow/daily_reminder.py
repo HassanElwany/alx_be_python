@@ -19,6 +19,11 @@ time_bound = input("Is it time-bound? (yes/no): ")
 # Process the Task Based on Priority and Time Sensitivity:
 
 # Use a Match Case statement to react differently based on the task’s priority.
+match priority:
+    case 'high':
+        if time_bound == 'yes':
+            print(f"{task} is a high priority task that requires immediate attention today!")
+
 # Within the Match Case or after, use an if statement to modify the reminder if the task is time-bound.
 # Provide a Customized Reminder:
 
