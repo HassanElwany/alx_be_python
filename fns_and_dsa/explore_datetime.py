@@ -4,10 +4,10 @@ now = datetime.now()
 
 def display_current_datetime():
     
-    formatted_date = now.strftime("%Y-%m-%d")
-    formatted_time = now.strftime("%H:%M:%S")
-    current_date_and_time = f"{formatted_date} {formatted_time}"
-    print(current_date_and_time)
+    formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
+    #formatted_time = now.strftime("%H:%M:%S")
+    #current_date_and_time = f"{formatted_date} {formatted_time}"
+    print(formatted_date)
     
 
 def calculate_future_date():
