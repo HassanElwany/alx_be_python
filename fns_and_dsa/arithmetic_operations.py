@@ -20,7 +20,7 @@ def perform_operation(num1, num2, operation):
     elif operation == 'multiply':
         return num1 * num2
     elif operation == 'divide':
-        try:
-            return num1 / num2
-        except ZeroDivisionError():
+        if num2 == 0:
             return f"Invalid divide zero divide"
+        else:
+            return num1 / num2
