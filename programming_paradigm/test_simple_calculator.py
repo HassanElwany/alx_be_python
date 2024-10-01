@@ -7,7 +7,7 @@ class TestSimpleCalculator(unittest.TestCase):
         # Create an instance of SimpleCalculator
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         result = self.calc.add(10, 5)
         self.assertAlmostEqual(result, 15)
         self.assertAlmostEqual(self.calc.add(-1, 1), 0)
